@@ -1,0 +1,33 @@
+<div class="title-login">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+<div class="dirk-bar-sign">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<div class="sign-inputs">
+    <form action="/sign" method="post">
+        <div class="inputs">
+            <canvas class="canv" width="700" height="350"></canvas>
+            <input id="sig" type="hidden" name="sig" value="">
+        </div>
+        <div class="inputs">
+            <button id="sign-button" type="submit">feel the heat</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+</div>
+
+<a class="logout" href="/logout">logout  /</a>
+
+{{#if error}}
+    <p id="goofed-sign">goofed, try again</p>
+{{/if}}
+
+<audio id="projector" src="/public/audio/projector.mp3"></audio>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/sign.js"></script>

@@ -1,0 +1,30 @@
+<div class="title-login">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+<div class="dirk-bar-login">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<div class="more-info-inputs">
+    <form action="/more-info" method="post">
+        <div class="inputs">
+            <input type="number" name="age" placeholder="age">
+        </div>
+        <div class="inputs">
+            <input type="text" name="city" placeholder="city">
+        </div>
+        <div class="inputs">
+            <input type="text" name="homepage" placeholder="homepage">
+        </div>
+        <div class="inputs">
+            <button type="submit">continue</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/moreinfo.js"></script>

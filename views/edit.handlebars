@@ -1,0 +1,55 @@
+<div class="title-login">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+<div class="dirk-bar-login">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<a class="logout" href="/thanks"><- back</a>
+
+<div class="edit-inputs">
+    <form action="/update" method="post">
+        <div class="e-inputs">
+            <p class="edit-headers">first name:</p>
+            <input type="text" name="first" value="{{results.first_name}}">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">last name:</p>
+            <input type="text" name="last" value="{{results.last_name}}">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">email:</p>
+            <input type="text" name="email" value="{{results.email}}">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">password:</p>
+            <input type="password" name="password" value="">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">age:</p>
+            <input type="number" name="age" value="{{results.age}}">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">city:</p>
+            <input type="text" name="city" value="{{results.city}}">
+        </div>
+        <div class="e-inputs">
+            <p class="edit-headers">homepage:</p>
+            <input type="text" name="homepage" value="{{results.homepage}}">
+        </div>
+        <div class="e-inputs">
+            <button type="submit">update</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+
+    {{#if error}}
+        <p id="goofed">goofed, try again</p>
+    {{/if}}
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/edit.js"></script>

@@ -1,0 +1,13 @@
+* {
+    font-family: arial;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    color: hotpink;
+    font-size: 30vw;
+}

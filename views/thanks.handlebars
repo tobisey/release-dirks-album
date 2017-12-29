@@ -1,0 +1,32 @@
+<div class="title-login">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+
+<div class="dirk-bar-login">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<!-- <p class="text-on-black">you got the touch!</p> -->
+
+<div id="your-sig"><img src="{{image}}" alt="your sig"></div>
+
+<div class="options">
+    <a href="/signers">see who's signed  /</a>
+    <a href="/update">edit profile  /</a>
+    <a href="/logout">logout  /</a>
+</div>
+
+<form action="/delete" method="post">
+    <button id="delete-sig" type="submit">delete signature</button>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>
+
+<audio src="/public/audio/you-got-the-touch.mp3" loop></audio>
+
+<img class="groove" src="https://themoviereport.files.wordpress.com/2015/05/boogie-nights.gif" alt="groove">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/thanks.js"></script>

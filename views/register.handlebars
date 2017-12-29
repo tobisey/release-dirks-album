@@ -1,0 +1,40 @@
+<div class="title">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+
+<div class="dirk-bar">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<div class="register-inputs">
+    <form action="/register" method="post">
+        <div class="inputs">
+            <input type="text" name="first" placeholder="first name">
+        </div>
+        <div class="inputs">
+            <input type="text" name="last" placeholder="last name">
+        </div>
+        <div class="inputs">
+            <input type="text" name="email" placeholder="email">
+        </div>
+        <div class="inputs">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <div class="inputs">
+            <button type="submit">register</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+
+    <p class="already-registered">already registered? <a href="/login">login</a></p>
+</div>
+
+{{#if error}}
+    <p id="goofed">goofed, try again</p>
+{{/if}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/register.js"></script>

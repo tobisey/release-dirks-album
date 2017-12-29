@@ -1,0 +1,35 @@
+<div class="title-login">
+    <h1>release</h1>
+    <h1>dirk's</h1>
+    <h1>album!</h1>
+</div>
+
+<div class="dirk-bar-login">
+    <img src="http://img.wennermedia.com/social/rs-129459-20070626-boogienights-x1800-1393282733.jpg" alt="dirk-bar">
+</div>
+
+<div class="login-inputs">
+    <form action="/login" method="post">
+        <div class="inputs">
+            <input type="text" name="email" placeholder="email">
+        </div>
+        <div class="inputs">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <div class="inputs">
+            <button type="submit">login</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+</div>
+
+{{#if error}}
+    <p id="goofed">goofed, try again</p>
+{{/if}}
+
+{{#if blocked}}
+    <p id="goofed">you're blocked you sponge</p>
+{{/if}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="/public/login.js"></script>

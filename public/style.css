@@ -1,0 +1,457 @@
+@keyframes spin {
+    0%   {transform: rotateY(0deg)}
+    100% {transform: rotateY(360deg)}
+}
+
+@keyframes jiggle {
+    0%   {transform: translateX(0px)}
+    50%  {transform: translateX(10px)}
+    100% {transform: translateX(0px)}
+}
+
+@keyframes flash {
+    0%   {-webkit-text-stroke: 3px hotpink}
+    50%  {-webkit-text-stroke: 3px blue}
+    100% {-webkit-text-stroke: 3px hotpink}
+}
+
+@keyframes projector {
+    0%   {opacity: 0}
+    10%  {opacity: 0.8}
+    12%  {opacity: 0.1}
+    27%  {opacity: 0.7}
+    35%  {opacity: 1}
+    48%  {opacity: 0.9}
+    56%  {opacity: 0}
+    70%  {opacity: 0}
+    80%  {opacity: 0.7}
+    85%  {opacity: 0.3}
+    100% {opacity: 1}
+}
+
+@keyframes groover {
+    0%   {transform: rotateY(0deg)}
+    20%  {transform: rotateY(360deg)}
+    40%  {transform: rotateY(0deg)}
+    60%  {transform: rotateY(360deg)}
+    80%  {transform: rotateY(0deg)}
+    100% {transform: rotateY(360deg)}
+}
+
+* {
+    overflow: hidden;
+    font-family: 'Carter One', cursive;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.body-container {
+    position: absolute;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    font-size: 24px;
+}
+
+/*REGISTER PAGE==============================================================*/
+
+.title {
+    position: absolute;
+    z-index: -1;
+    width: 40vw;
+    top: 5vw;
+    font-size: 70px;
+    left: -40vw;
+    transition: left 1s;
+}
+
+.title h1 {
+    color: black;
+    margin: 0;
+    line-height: 100%;
+    animation: flash 1s infinite;
+    animation-delay: 3s;
+    text-shadow: 5px 5px purple;
+    -webkit-text-stroke: 3px hotpink;
+}
+
+.slide {
+    left: 2vw;
+}
+
+.dirk-bar {
+    position: absolute;
+    z-index: -2;
+    right: -100vw;
+    top: 10vh;
+    transition: right 2s;
+    border-radius: 80px 0px 0px 80px;
+}
+
+.dirk-slide {
+    right: 0;
+}
+
+.register-inputs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 40vw;
+    opacity: 0.9;
+    right: -20vw;
+    top: 100px;
+    transform: rotate(5deg);
+    transition: all 0.8s;
+    /*background-color: #C120C2;
+    border-radius: 20px;
+    border: 5px dotted #F5CE41;*/
+}
+
+.register-inputs-slide {
+    right: 0;
+    transform: rotate(2deg);
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    width: 20vw;
+    height: 3vw;
+    background-color: white;
+    margin: 5px;
+    font-size: 24px;
+    border: none;
+    transition: width 0.2s;
+    transition: height 0.2s;
+    text-indent: 10px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus {
+    outline:0;
+}
+
+.focusedInput {
+    width: 22vw;
+    height: 3.5vw;
+}
+
+button {
+    border: 5px dotted hotpink;
+    background-color: black;
+    color: hotpink;
+    font-size: 24px;
+    width: 10vw;
+    height: 4vw;
+    border-radius: 30px;
+    text-shadow: 3px 3px purple;
+    transition: width 0.2s;
+    transition: height 0.2s;
+    /*box-shadow: 3px 3px purple;*/
+}
+
+button:focus {
+    outline:0;
+}
+
+button:active {
+    border: 5px dotted blue;
+    background-color: black;
+    color: blue;
+}
+
+.focusedButton {
+    width: 11vw;
+    height: 4.2vw;
+    color: blue;
+    box-shadow: none;
+}
+
+a {
+    color: hotpink;
+    text-decoration: none;
+    text-shadow: 3px 3px purple;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: hotpink;
+}
+
+a:hover {
+    text-decoration: underline;
+    /*-webkit-text-stroke: 1px blue;*/
+}
+
+.already-registered {
+    color: white;
+    text-shadow: 3px 3px purple;
+}
+
+#goofed {
+    position: absolute;
+    font-size: 18px;
+    top: 120px;
+    right: 3vw;
+    color: black;
+    animation: jiggle 0.15s linear 3;
+}
+
+/*MORE INFO PAGE==============================================================*/
+
+.more-info-inputs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 40vw;
+    opacity: 0.9;
+    right: -25vw;
+    top: 100px;
+    transform: rotate(5deg);
+    transition: all 0.8s;
+}
+
+.more-info-inputs-slide {
+    right: 0;
+    transform: rotate(2deg);
+}
+
+/*THANKS PAGE==============================================================*/
+
+.text-on-black {
+    color: hotpink;
+}
+
+#your-sig {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 50vw;
+    animation: spin 6s linear infinite;
+}
+
+#delete-sig {
+    position: absolute;
+    top: 550px;
+    right: 8vw;
+    width: 20vw;
+    transform: rotate(2deg);
+}
+
+.options {
+    position: absolute;
+    width: 33vw;
+    right: -40vw;
+    text-shadow: 3px 3px purple;
+    transition: right 1s;
+}
+
+.options-slide {
+    right: 0;
+}
+
+.groove {
+    position: absolute;
+    bottom: 3vw;
+    left: 3vw;
+    transform: rotate(-3deg);
+    /*box-shadow: 8px 8px purple;*/
+    transition: width 5s;
+    border-radius: 20px;
+}
+
+.really-grooving {
+    width: 60vw;
+    transform: rotate(-3deg);
+    /*animation: groover 2s linear;*/
+    /*animation-iteration-count: 1;*/
+}
+
+/*LOGIN PAGE==================================================================*/
+
+.title-login {
+    position: absolute;
+    z-index: -1;
+    width: 40vw;
+    top: 5vw;
+    font-size: 70px;
+    left: 2vw;
+    transition: left 1s;
+}
+
+.title-login h1 {
+    color: black;
+    margin: 0;
+    line-height: 100%;
+    animation: flash 1s infinite;
+    text-shadow: 5px 5px purple;
+    -webkit-text-stroke: 3px hotpink;
+}
+
+.dirk-bar-login {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 10vh;
+    transition: right 2s;
+    border-radius: 80px 0px 0px 80px;
+}
+
+.login-inputs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 40vw;
+    opacity: 0.9;
+    right: -25vw;
+    top: 100px;
+    transform: rotate(5deg);
+    transition: all 0.8s;
+    /*background-color: #C120C2;
+    border-radius: 20px;
+    border: 5px dotted #F5CE41;*/
+}
+
+.login-inputs-slide {
+    right: 0;
+    transform: rotate(2deg);
+}
+
+/*SIGN PAGE==================================================================*/
+
+.dirk-bar-sign {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    top: 10vh;
+    transition: right 2s;
+}
+
+.sign-inputs {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 2vw;
+    top: 150px;
+    transform: rotate(2deg);
+}
+
+#sign-button {
+    width: 20vw;
+}
+
+.canv {
+    right: 0;
+    background-image: url('https://images.genius.com/c1c807e5235657fe8d5d4b0cad926b07.400x246x41.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 25px 25px 50px 0 black inset, -25px -25px 50px 0 black inset;
+
+}
+
+.animate {
+    animation: projector 3s;
+}
+
+.logout {
+    position: absolute;
+    width: 7vw;
+    right: -7vw;
+    top: 5px;
+    color: hotpink;
+    transition: right 0.6s;
+}
+
+.logout-slide {
+    right: 1vw;
+}
+
+#goofed-sign {
+    color: hotpink;
+    position: absolute;
+    font-size: 18px;
+    top: 120px;
+    right: 3vw;
+    animation: jiggle 0.15s linear 3;
+    text-shadow: 3px 3px purple;
+}
+
+/*SIGNERS PAGE=================================================*/
+
+.names {
+    position: absolute;
+    overflow-y: scroll;
+    top: 120px;
+    right: -30vw;
+    width: 30vw;
+    height: 35vw;
+    transform: rotate(2deg);
+    transition: right 0.8s;
+}
+
+.names-slide {
+    right: -2vw;
+}
+
+.name {
+    color: hotpink;
+    text-shadow: 3px 3px purple;
+}
+
+/*EDIT PAGE================================================*/
+
+.edit-inputs {
+    position: absolute;
+    top: 120px;
+    right: -45vw;
+    width: 45vw;
+    height: 35vw;
+    border-radius: 15px;
+    transform: rotate(5deg);
+    transition: right 0.8s;
+}
+
+.edit-inputs-slide {
+    right: -2vw;
+    transform: rotate(2deg);
+}
+
+.e-inputs {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 50px;
+    margin-top: 5px;
+}
+
+.edit-headers {
+    margin: 0;
+    color: hotpink;
+    text-shadow: 3px 3px purple;
+}
