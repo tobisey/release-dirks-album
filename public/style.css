@@ -108,9 +108,6 @@ body {
     top: 100px;
     transform: rotate(5deg);
     transition: all 0.8s;
-    /*background-color: #C120C2;
-    border-radius: 20px;
-    border: 5px dotted #F5CE41;*/
 }
 
 .register-inputs-slide {
@@ -161,7 +158,6 @@ button {
     text-shadow: 3px 3px purple;
     transition: width 0.2s;
     transition: height 0.2s;
-    /*box-shadow: 3px 3px purple;*/
 }
 
 button:focus {
@@ -197,7 +193,6 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
-    /*-webkit-text-stroke: 1px blue;*/
 }
 
 .already-registered {
@@ -275,7 +270,6 @@ a:hover {
     bottom: 3vw;
     left: 3vw;
     transform: rotate(-3deg);
-    /*box-shadow: 8px 8px purple;*/
     transition: width 5s;
     border-radius: 20px;
 }
@@ -283,8 +277,6 @@ a:hover {
 .really-grooving {
     width: 60vw;
     transform: rotate(-3deg);
-    /*animation: groover 2s linear;*/
-    /*animation-iteration-count: 1;*/
 }
 
 /*LOGIN PAGE==================================================================*/
@@ -330,9 +322,6 @@ a:hover {
     top: 100px;
     transform: rotate(5deg);
     transition: all 0.8s;
-    /*background-color: #C120C2;
-    border-radius: 20px;
-    border: 5px dotted #F5CE41;*/
 }
 
 .login-inputs-slide {

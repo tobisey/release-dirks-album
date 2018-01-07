@@ -1,13 +1,3 @@
-// if ($('#goofed').length > 0) {
-//     $('.title').addClass('slide')
-//     $('.dirk-bar').addClass('dirk-slide')
-//     $('.register-inputs').addClass('register-inputs-slide');
-// } else {
-
-// }
-
-// console.log($('#goofed').length);
-
 if ($('#goofed').length > 0) {
      $('.title').addClass('slide');
      $('.dirk-bar').addClass('dirk-slide');

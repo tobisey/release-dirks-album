@@ -52,9 +52,6 @@ app.use(cookieSession({
 const csurf = require('csurf');
 app.use(csurf());
 
-//REDIS
-// var rd = require('./redis')
-
 //DB MODULE
 const db = require('./db');
 const signPetition = db.signPetition;
@@ -335,7 +332,5 @@ app.get('/logout', (req, res) => {
 app.get('*', (req, res) => {
     res.redirect('/');
 })
-
-// resetDB();
 
 app.listen(process.env.PORT || 8080, () => {console.log(`listening 8080...`)});
