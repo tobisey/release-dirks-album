@@ -23,7 +23,7 @@
 <h2><i>preview</i></h2>
 <img src="dirk-preview.png" alt="dirk-preview">
 
-<h2><i>have a look</i></h2>
+<h2><i>view site</i></h2>
 <div><a href="https://dirk-petition.herokuapp.com/">dirk-petition.herokuapp.com/</a></div>
 
 <h2><i>get in touch</i></h2>
