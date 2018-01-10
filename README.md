@@ -9,6 +9,17 @@
 <p><strong>Back-End</strong>: Node.js, Express</p>
 <p><strong>Database</strong>: PostgresSQL</p>
 
+<h2>Features</h2>
+<ul>
+    <li>- Create an account</li>
+    <li>- Add additional information</li>
+    <li>- Sign the petition</li>
+    <li>- See who else has signed</li>
+    <li>- Filter signers by location</li>
+    <li>- Edit your information</li>
+    <li>- Delete your signature</li>
+</ul>
+
 <h2>Preview</h2>
 <img src="dirk-preview.png" alt="dirk-preview">
 
